@@ -1,0 +1,190 @@
+.section1{
+  height: 100vh;
+  position: relative;
+  .swiper-container{
+    .img{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      img{height: 100%; width: 100%}
+      .fon-slider-img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    .container{
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      max-width: em(1380,16);
+      .text-center{
+        position: absolute;
+        top: 52%;
+        left: 0;
+        transform: translate3d(0, -50%, 0);
+        p{
+          text-align: left;
+          font-size: em(72);
+          font-family: MullerRegular;
+          color: white;
+          letter-spacing: em(2.7, 72);
+          margin-bottom: em(7, 72);
+        }
+      }
+    }
+
+  }
+  .bottom-block-s1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .detailed{
+      height: em(80);
+      position: absolute;
+      bottom: em(45);
+      left: 50%;
+      transform: translate3d(-50%, 0,0);
+      perspective: em(1);
+      p{
+        color: white;
+        font-size: em(14);
+        letter-spacing: em(1, 14);
+      }
+      .line{
+        width: em(2);
+        height: em(40);
+        background-color: white;
+        margin:0 auto em(20);
+      }
+      &:hover{
+        .line-animate{
+          animation-name: example;
+          animation-duration: .7s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+      }
+    }
+    .soc{
+      position: absolute;
+      bottom: em(68);
+      right: em(20);
+      letter-spacing: 2px;
+      a{
+        font-size: em(14);
+        margin: 0 em(30, 14);
+        font-family: MullerRegular;
+        color: white;
+        position: relative;
+        &:after{
+          display: block;
+          content: "";
+          height: em(3, 18);
+          width: 0%;
+          background-color: white;
+          position: absolute;
+          right: 0;
+          bottom: -7px;
+          transition: width .2s ease-in-out;
+        }
+      }
+      a:hover:after,
+      a:focus:after{
+        width: 100%;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color:#000;
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+  color:#fff;
+  background: #007aff;
+}
+
+//.swiper-pagination{
+//  color: white;
+//  background-color: white;
+//  bottom: 50px;
+//  left: 100px;
+//  z-index: 8;
+//}
+
+.opacity-anim{
+  opacity: 0;
+}
+
+.section1{
+  .swiper-pagination{
+    text-align: left;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: em(57);
+    left: em(82);
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 em(15);}
+  .swiper-pagination-bullet {
+    font-size: em(14);
+    width: em(40,14);
+    text-align: center;
+    line-height: em(20,14);
+    letter-spacing: 2px;
+    font-family: MullerRegular;
+    text-transform: uppercase;
+    //margin: 0 25px;
+    padding-bottom: em(32,14);
+    color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+  }
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+}

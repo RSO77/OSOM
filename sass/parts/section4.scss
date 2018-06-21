@@ -1,0 +1,164 @@
+.section4{
+  margin-top: em(102);
+  padding-top: em(102);
+  background-color: #333333;
+  padding-bottom: em(155);
+  position: relative;
+  overflow: hidden;
+  .container{
+    position: relative;
+    z-index: 5;
+  }
+  .titl-s4{
+    .l-block-s4{
+      display: inline-block;
+      font-family: MullerRegular;
+      font-size: em(36);
+      color: white;
+      width: em(577,36);
+      line-height: em(37,36);
+      letter-spacing: 1px;
+    }
+    .r-block-s4{
+      font-size: em(14);
+      font-family: MullerRegular;
+      vertical-align: top;
+      display: inline-block;
+      margin: em(64,14) 0 0 em(340,14);
+      letter-spacing: em(2,14);
+      color: white;
+      position: relative;
+      text-transform: uppercase;
+      &:before{
+        content: '';
+        position: absolute;
+        top:45%;
+        right: em(-82,14);
+        transform: translate(0,-50%);
+        width: em(50,14);
+        height: em(2,14);
+        background-color: white;
+      }
+      &:hover{
+        font-family: MullerBold;
+        &:before{
+          animation-name: example3;
+          animation-duration: .7s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+      }
+    }
+  }
+  .slider{
+    margin-top: em(172);
+    position: relative;
+    background-color: #333333;
+    .swiper-sl2{
+      background-color: #333333;
+      .swiper-slide{
+        background-color: #333333;
+        position: relative;
+        .img{
+          width: em(1145);
+          margin-left: em(224);
+          img{width: 100%}
+          vertical-align: top;
+        }
+        .l-block-s4{
+          text-align: left;
+          position: absolute;
+          top: 0;
+          left: 0;
+          .text1{
+            p:first-child{
+              font-size: em(14);
+              text-transform: uppercase;
+              font-family: MullerLight;
+              color: #5c5c5c;
+              margin-bottom: em(42,14);
+            }
+            p:last-child{
+              font-size: em(36);
+              color: white;
+              font-family: MullerRegular;
+              width: em(390,36);
+            }
+          }
+          .text2{
+            font-size: em(14);
+            font-family: MullerLight;
+            line-height: em(25,14);
+            width: em(209,14);
+            color: #999999;
+            margin: em(112,14) 0 em(86,14);
+          }
+          a{
+            font-family: MullerBold;
+            font-size: em(16);
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: em(2.5, 16);
+            padding: em(11, 16) 0;
+            &:hover{
+              text-shadow: rgba(255, 255, 255, 0.42) 2px 2px 10px;
+              border-bottom: 2px solid white ;
+              border-top: 1px solid white ;
+            }
+          }
+        }
+      }
+    }
+    .rectangle1,.rectangle2{
+      width: em(235);
+      height: em(60);
+      position: absolute;
+      left: em(456);
+      background-color: #4c463b;
+    }
+    .rectangle1{top: em(-59);}
+    .rectangle2{bottom: em(-56)}
+  }
+  .br-s4{
+    color: #363636;
+    font-size: em(252);
+    position: absolute;
+    bottom: 50px;
+    left: 49%;
+    transform: translate3d(-50%, -50%, 0);
+    font-family: MullerBold;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: em(4,251);
+  }
+
+
+  .sp2{
+    position: absolute;
+    left: em(262);
+    bottom: em(70);
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 em(14);}
+  .swiper-pagination-bullet {
+    font-size: em(14);
+    width: em(40,14);
+    text-align: center;
+    line-height: em(20,14);
+    letter-spacing: 2px;
+    font-family: MullerRegular;
+    margin: 0 em(15,14);
+    padding-bottom: em(32,14);
+    color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+  }
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+
+}

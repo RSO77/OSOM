@@ -1,0 +1,157 @@
+.section3{
+  margin-top: em(153);
+  position: relative;
+  .titl{
+    font-family: MullerBold;
+    font-size: em(48);
+    color: #333333;
+    letter-spacing: em(1, 48);
+  }
+  .block1-s3{
+    margin-top: em(65);
+    .l-block-s3{
+      display: inline-block;
+      width: em(690);
+    }
+    .r-block-s3{
+      display: inline-block;
+      width: em(455);
+      vertical-align: top;
+      margin: em(45) 0 0 em(222);
+      .titl-rb{
+        font-family: MullerBold;
+        font-size: em(48);
+        color: #333333;
+        letter-spacing: em(1, 48);
+      }
+      .text{
+        font-size: em(16);
+        font-family: MullerLight;
+        color: #333333;
+        margin: em(32) 0 em(62);
+        p {
+          line-height: em(31);
+          letter-spacing: em(1);
+        }
+        p:nth-child(2){
+          margin: em(26) 0 em(40);
+        }
+      }
+      a{
+        font-size: em(14);
+        font-family: MullerRegular;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: em(3,14);
+        &:before {
+          content: '';
+          width: em(50,14);
+          height: em(2,14);
+          position: absolute;
+          top: 40%;
+          right: em(-85,14);
+          transform: translate(0, -50%);
+          background-color: black;
+        }
+        &:hover{
+          font-family: MullerBold;
+          &:before{
+            animation-name: example3;
+            animation-duration: .7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
+      }
+    }
+  }
+  .block2-s3{
+    padding-top: em(100);
+    .l-block-s3{
+      display: inline-block;
+      width: em(480);
+      vertical-align: top;
+      .titl-rb{
+        margin-top: em(54,48);
+        font-family: MullerBold;
+        font-size: em(48);
+        color: #333333;
+        letter-spacing: em(1, 48);
+      }
+      .text{
+        font-size: em(16);
+        font-family: MullerLight;
+        color: #333333;
+        margin: em(32) 0 em(58);
+        p {
+          line-height: em(31);
+          letter-spacing: em(1);
+        }
+      }
+      a{
+        font-size: em(14);
+        font-family: MullerRegular;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: em(3,14);
+        &:before {
+          content: '';
+          width: em(50,14);
+          height: em(2,14);
+          position: absolute;
+          top: 40%;
+          right: em(-85,14);
+          transform: translate(0, -50%);
+          background-color: black;
+        }
+        &:hover{
+          font-family: MullerBold;
+          &:before{
+            animation-name: example3;
+            animation-duration: .7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
+      }
+    }
+    .r-block-s3{
+      display: inline-block;
+      margin: em(3) 0 0 em(199);
+      width: em(695);
+    }
+  }
+  .page-s3{
+    color: #333333;
+    font-size: em(150);
+    font-family: MullerBold;
+    position: absolute;
+    top: 49%;
+    left: 51%;
+    transform:translate3d(-50%, -50%, 0) rotate(-90deg);
+    span{
+      font-size: em(24,150);
+      font-family: MullerLight;
+      text-transform: uppercase;
+      letter-spacing: em(4,24);
+    }
+  }
+  .begin-btn{
+    margin: em(65,14) auto 0;
+    //&:hover{margin: em(72,16) auto 0;}
+  }
+  .br-s3{
+    color: #fafafa;
+    font-size: em(251);
+    position: absolute;
+    top: 50px;
+    left: 49%;
+    transform: translate3d(-50%, 0, 0);
+    font-family: MullerBold;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: em(4,251);
+  }
+}

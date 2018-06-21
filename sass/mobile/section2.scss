@@ -1,0 +1,75 @@
+.section2 {
+  padding-top: em(70);
+  .container {
+    position: relative;
+  }
+  .l-block-s2 {
+    display: block;
+    width: em(400);
+    text-align: left;
+    margin-left: em(20);
+    .titl {
+      font-size: em(30);
+      margin: em(10, 30) 0 em(20, 30);
+      color: #333333;
+      letter-spacing: em(1, 30);
+    }
+    .text {
+      font-size: em(15);
+      max-width: 100%;
+      p {
+        line-height: em(28,15);
+      }
+      p:nth-child(2){
+        margin: em(26,15) 0 em(30,15);
+      }
+    }
+  }
+  .r-block-s2 {
+    display: block;
+    width: em(450);
+    margin-top: em(10);
+    margin-left: em(190);
+    .photo-name {
+      font-size: em(14);
+      margin-bottom: em(10);
+    }
+    .img {
+      &:before {
+        display: none;
+      }
+
+    }
+  }
+  .experience {
+    width: em(240);
+    height: em(100);
+    border: em(4) solid #85714c;
+    bottom: em(100);
+    left: em(20);
+    transform: translate3d(0, 0, 0);
+    padding: em(17) em(20);
+    p:first-child {
+      font-size: em(12);
+      text-transform: uppercase;
+      margin-bottom: em(10,12);
+    }
+    p:last-child {
+      font-size: em(57);
+      margin-left: em(2,55);
+    }
+  }
+  .page-s2{
+    font-size: em(100);
+    top: em(150,100);
+    right: em(0,100);
+    transform: rotate(-90deg);
+    span{
+      font-size: em(16,100);
+      letter-spacing: em(3,16);
+    }
+  }
+  .br-s2{
+   display: none;
+  }
+}

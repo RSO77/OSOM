@@ -1,0 +1,33 @@
+@import "base/mixins";
+@import "base/variables";
+@import "base/normilize";
+@import "base/helpers";
+@import "libs/swiper.css";
+@import "base/base";
+@import "base/fonts";
+@import "parts/media";
+
+@import "parts/footer";
+@import "parts/header";
+
+@import "parts/section1";
+@import "parts/section2";
+@import "parts/section3";
+@import "parts/section4";
+@import "parts/section5";
+
+
+
+.mobile{
+  @import 'mobile/footer';
+  @import 'mobile/header';
+
+  @import 'mobile/section1';
+  @import 'mobile/section2';
+  @import 'mobile/section3';
+  @import 'mobile/section4';
+  @import 'mobile/section5';
+}
+
+
+

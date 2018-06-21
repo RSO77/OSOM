@@ -1,0 +1,57 @@
+.section5{
+  padding-bottom: em(190);
+  position: relative;
+  .titl{
+    font-size: em(48);
+    margin-top: em(112,48);
+    font-family: MullerBold;
+    color: #333333;
+    letter-spacing: em(1.3,48);
+  }
+  .center{
+    margin-top: em(218);
+    text-align: left;
+    .tel, .mail{
+      display: inline-block;
+      text-align: left ;
+      letter-spacing: 1.4px;
+      p{
+        font-size: em(18);
+        font-family: MullerRegular;
+        color: #999999;
+        margin-bottom: em(17,18);
+      }
+      a{
+        font-size: em(24);
+        font-family: MullerBold;
+        color: #333333;
+        //transition: opacity 0.5s;
+        transition: .4s all ease;
+        &:hover{
+          color: rgba(51, 51, 51, 0.7);
+        }
+      }
+    }
+    .tel{
+      margin-left: em(230);
+    }
+    .mail{
+      margin-left: em(454);
+    }
+    .begin-btn{
+      margin: em(115) auto 0;
+    }
+  }
+  .br-s5{
+    color: #fafafa;
+    font-size: em(251);
+    position: absolute;
+    bottom: 50px;
+    left: 49%;
+    transform: translate3d(-50%, 0, 0);
+    font-family: MullerBold;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: em(4,251);
+  }
+}

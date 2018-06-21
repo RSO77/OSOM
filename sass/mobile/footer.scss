@@ -1,0 +1,47 @@
+.footer{
+  height: em(100);
+  .create{
+    font-size: em(13);
+    top: auto;
+    bottom: em(50,13);
+    left: 50%;
+    transform: translate(-50%,0);
+    width: em(220,13);
+    text-align: center;
+  }
+  .disclaimer{
+    font-size: em(12);
+    top: auto;
+    bottom: em(20,12);
+    left: em(20,14);
+    transform: translate(0,0);
+    letter-spacing: em(1,14);
+    font-family: MullerRegular;
+  }
+  .soc-footer{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    a{
+      margin: 0 em(32,14);
+      position: relative;
+      &:after{
+        display: block;
+        content: "";
+        height: em(2, 14);
+        width: 0%;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        bottom: em(-6,14);
+        transition: width .3s ease-in-out;
+      }
+    }
+    a:hover:after,
+    a:focus:after{
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+}

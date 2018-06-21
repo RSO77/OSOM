@@ -1,0 +1,60 @@
+.footer{
+  height: em(130);
+  position: relative;
+  letter-spacing: em(2);
+  .create{
+    font-size: em(14);
+    font-family: MullerBold;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(0,-50%);
+    color: #333333;
+    text-transform: uppercase;
+    cursor: pointer;
+    span{
+      color: #d1d1d1;
+      text-transform: none;
+    }
+  }
+  .disclaimer{
+    font-size: em(14);
+    font-family: MullerBold;
+    position: absolute;
+    top: 50%;
+    left: em(100,14);
+    transform: translate(0,-50%);
+    color: #d1d1d1;
+
+  }
+  .soc-footer{
+    font-size: em(14);
+    font-family: MullerBold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333333;
+    a{
+      margin: 0 em(32,14);
+      position: relative;
+      &:after{
+        display: block;
+        content: "";
+        height: em(2, 14);
+        width: 0%;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        bottom: em(-6,14);
+        transition: width .3s ease-in-out;
+      }
+    }
+    a:hover:after,
+    a:focus:after{
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+}

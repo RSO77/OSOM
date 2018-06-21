@@ -1,0 +1,143 @@
+.section2 {
+  padding-top: em(167);
+  font-family: MullerRegular;
+  letter-spacing: em(2);
+  position: relative;
+  .container {
+    position: relative;
+  }
+  .l-block-s2 {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: left;
+    .titl {
+      font-family: MullerBold;
+      font-size: em(48);
+      margin: em(39, 48) 0 em(53, 48);
+      color: #333333;
+      letter-spacing: em(1, 48);
+    }
+    .text {
+      font-size: em(16);
+      font-family: MullerLight;
+      color: #333333;
+      max-width: em(470);
+      p {
+        line-height: em(32);
+        letter-spacing: em(1);
+      }
+      p:nth-child(2){
+        margin: em(26) 0 em(40);
+      }
+      a {
+        font-size: em(14);
+        font-family: MullerRegular;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: em(3,14);
+        &:before {
+          content: '';
+          width: em(50,14);
+          height: em(2,14);
+          position: absolute;
+          top: 40%;
+          right: em(-85,14);
+          transform: translate(0, -50%);
+          background-color: black;
+        }
+        &:hover{
+          font-family: MullerBold;
+          &:before{
+            animation-name: example3;
+            animation-duration: .7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
+      }
+    }
+  }
+  .r-block-s2 {
+    display: inline-block;
+    width: em(689);
+    margin-top: em(2);
+    margin-left: em(8);
+    .photo-name {
+      font-size: em(16);
+      color: #333333;
+      text-transform: uppercase;
+      text-align: right;
+      margin-bottom: em(15);
+      font-family: MullerBold;
+    }
+    .img {
+      position: relative;
+      width: 100%;
+      img{width: 100%}
+      &:before {
+        content: '';
+        background: url("/media/img/triangle.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: absolute;
+        bottom: em(-80);
+        right: em(-88);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+    }
+  }
+  .experience {
+    width: em(380);
+    height: em(170);
+    border: em(5) solid #85714c;
+    position: absolute;
+    bottom: em(72);
+    left: 51%;
+    transform: translate3d(-50%, 0, 0);
+    color: #85714c;
+    padding: em(23) em(20);
+    font-family: MullerBold;
+    letter-spacing: em(1.5);
+    p:first-child {
+      font-size: em(14);
+      text-transform: uppercase;
+      margin-bottom: em(53,14);
+    }
+    p:last-child {
+      font-size: em(72);
+      margin-left: em(2,72);
+    }
+  }
+  .page-s2{
+    color: #333333;
+    font-size: em(150);
+    font-family: MullerBold;
+    position: absolute;
+    top: 63%;
+    right: em(124,150);
+    transform:translate(0, -50%) rotate(-90deg);
+    span{
+      font-size: em(24,150);
+      font-family: MullerLight;
+      text-transform: uppercase;
+      letter-spacing: em(3,24);
+    }
+  }
+  .br-s2{
+    color: #fafafa;
+    font-size: em(251);
+    position: absolute;
+    top: 50px;
+    left: 47%;
+    transform: translate3d(-50%, 0, 0);
+    font-family: MullerBold;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: em(4,251);
+  }
+}

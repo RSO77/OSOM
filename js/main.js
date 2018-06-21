@@ -87,33 +87,26 @@ $(function () {
     //     });
     // });
         $('.br-s4').each(function(){
-            var $s4 = $(this); // Назначаем объект
+            var $s4 = $(this);
             $(window).scroll(function() {
                 var yPos = -(($(window).scrollTop() - $('.section4').offset().top) / 1);
-                // Собираем значение координат фона вместе
                 var coords = (500+ yPos) + 'px';
-                console.log(coords);
-                // Смещаем фон
                 $s4.css({ top: coords });
             });
         });
         $('.br-s5').each(function(){
-            var $s5 = $(this); // Назначаем объект
+            var $s5 = $(this);
             $(window).scroll(function() {
                 var yPos = -(($(window).scrollTop() - $('.section5').offset().top) / 1);
-                // Собираем значение координат фона вместе
                 var coords = (-50+ yPos) + 'px';
-                console.log(coords);
-                // Смещаем фон
                 $s5.css({ top: coords });
             });
         });
         $('.br-s3').each(function(){
-            var $s3 = $(this); // Назначаем объект
+            var $s3 = $(this);
             $(window).scroll(function() {
                 var yPos = -(($(window).scrollTop() - $('.section3').offset().top) / 1);
                 var coords = (200+ yPos) + 'px';
-                console.log(coords);
                 $s3.css({ top: coords });
             });
         });
@@ -121,10 +114,7 @@ $(function () {
             var $s2 = $(this);
             $(window).scroll(function() {
                 var yPos = -(($(window).scrollTop() - $('.section2').offset().top) / 1);
-                // Собираем значение координат фона вместе
                 var coords = (150+ yPos) + 'px';
-                console.log(coords);
-                // Смещаем фон
                 $s2.css({ top: coords });
             });
         });
